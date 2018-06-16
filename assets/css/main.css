@@ -1,0 +1,75 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.background-img { 
+    background: url(../images/sunflowertest.jpeg); 
+     /* Full height */
+     height: 100%; 
+
+     /* Center and scale the image nicely */
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.hey {
+    /* background-color: #333; */
+    /* position: fixed; */
+    /* top: 0;
+    width: 100%;
+    display:block; */
+    /* transition: top 0.3s; */
+    height: 60x;
+    position: fixed;
+    top: 0;
+    transition: top 0.5s ease-in-out;
+    width: 100%;
+  }
+  
+  /* #hey a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  #hey a:hover {
+    background-color: #ddd;
+    color: black;
+  } */
+
+
+
+
+
+
+
+  /* body {
+    padding-top: 60px;
+} */
+
+/* nav {
+    background: #f5b335;
+    height: 60x;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+}
+
+.nav-up {
+    top: -60px;
+}
+.nav-down {
+    top: 0px;
+}
+
+.jumbotron{
+  height: 200px;
+  width:100%;
+  border: solid ;
+} */
