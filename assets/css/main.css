@@ -1,9 +1,19 @@
+@font-face {
+    font-family: 'mountains';
+    src: url('./../fonts/beyond_the_mountains.ttf') format('truetype');
+}
+
 body, html {
     height: 100%;
     margin: 0;
+    font-family: 'Raleway', sans-serif;
+    /* background: url(../images/dust_scratches.png); 
+    background-size: cover; */
 }
 .background-img { 
-    background: url(../images/sunflowertest.jpeg); 
+    background: url(../images/checks.jpg); 
+    /* background: url(../images/background-beautiful-bloom-54459.jpg); */
+    /* background: url(../images/portfoliobackground.png); */
      /* Full height */
      height: 100%; 
 
@@ -11,6 +21,25 @@ body, html {
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
+     
+}
+.background-longer { 
+    background: url(../images/checks.jpg); 
+    /* background: url(../images/background-beautiful-bloom-54459.jpg); */
+    /* background: url(../images/portfoliobackground.png); */
+     /* Full height */
+     height: auto; 
+
+     /* Center and scale the image nicely */
+     background-position: center;
+     /* background-repeat: no-repeat; */
+     background-size: cover;
+     
+}
+.dark {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
 }
 
 .hey {
@@ -25,51 +54,112 @@ body, html {
     top: 0;
     transition: top 0.5s ease-in-out;
     width: 100%;
+    z-index: 99;
   }
   
-  /* #hey a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 15px;
-    text-decoration: none;
-    font-size: 17px;
-  }
   
-  #hey a:hover {
-    background-color: #ddd;
-    color: black;
-  } */
+.test {
+    margin-top: 100px;
+}
 
-
-
-
-
-
-
-  /* body {
-    padding-top: 60px;
-} */
-
-/* nav {
-    background: #f5b335;
-    height: 60x;
-    position: fixed;
-    top: 0;
-    transition: top 0.2s ease-in-out;
+.big-space {
+    height: 6em;
     width: 100%;
 }
 
-.nav-up {
-    top: -60px;
-}
-.nav-down {
-    top: 0px;
+.about-img {
+    width: 100%;
 }
 
-.jumbotron{
-  height: 200px;
-  width:100%;
-  border: solid ;
-} */
+.cl-container {
+    width: 95%;
+}
+
+.square {
+    width: 90%;
+    height: auto;
+    background: white;
+    border: solid 2px paleturquoise;
+    margin-bottom: 1em;
+}
+
+.sunflower {
+    width: 100%;
+    margin-bottom: 10px;
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
+}
+.text-box {
+    width: 100%;
+    text-align: center;
+    padding: 0em 1em;
+}
+
+.title-size{
+    font-size: 5em;
+}
+
+.section-title {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.div-wrapper {
+    position: relative;
+
+}
+
+.bird-sunflower {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+}
+.header {
+    margin-top: 4em;
+}
+.dark-turquoise {
+    color: rgb(12, 134, 98);
+}
+.turquoise {
+    color: rgb(28, 173, 130);
+}
+
+.mountains-font {
+    font-family: 'mountains', sans-serif;
+}
+.title-details {
+    font-size: 1.5em;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+#hey a:hover{
+    color: rgb(24, 83, 77);
+    text-decoration: none;
+}
+
+.enlarge:hover {
+    transform: scale(1.05);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.nav-white {
+    background: rgba(255, 255, 255, 0.63);
+
+}
+
+.footer {
+    background: powderblue;
+ 
+}
+
+.icon-padding {
+    padding: 0em .5em;
+}
