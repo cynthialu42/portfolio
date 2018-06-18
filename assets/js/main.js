@@ -42,4 +42,9 @@ $(document).ready(function(){
     });
 
     new Vivus('react', {duration: 200}, myCallback);
+
+    $('.carousel').carousel({
+      interval: 2000
+    })
+    // $('.carousel').carousel('cycle');
 });

@@ -19,9 +19,26 @@ body, html {
 
      /* Center and scale the image nicely */
      background-position: center;
-     background-repeat: no-repeat;
+     /* background-repeat: no-repeat; */
      background-size: cover;
      
+}
+
+.gingham-yellow { 
+    background: url(../images/gingham-yellow.png); 
+    /* background: url(../images/background-beautiful-bloom-54459.jpg); */
+    /* background: url(../images/portfoliobackground.png); */
+     /* Full height */
+
+     /* Center and scale the image nicely */
+     /* background-position: center;*/
+     /* background-repeat: repeat-y; */
+     /*background-size: cover; */
+     
+}
+
+.recipe-home-img{
+    width: 100%;
 }
 .background-longer { 
     background: url(../images/checks.jpg); 
@@ -32,7 +49,7 @@ body, html {
 
      /* Center and scale the image nicely */
      background-position: center;
-     /* background-repeat: no-repeat; */
+     background-repeat: repeat-y;
      background-size: cover;
      
 }
@@ -67,6 +84,10 @@ body, html {
     width: 100%;
 }
 
+.medium-space {
+    height: 3em;
+    width: 100%;
+}
 .about-img {
     width: 100%;
 }
@@ -125,7 +146,13 @@ body, html {
 .turquoise {
     color: rgb(28, 173, 130);
 }
+.firebrick {
+    color: firebrick;
+}
 
+.dark-orange{
+    color: rgb(255, 145, 0);
+}
 .mountains-font {
     font-family: 'mountains', sans-serif;
 }
@@ -163,3 +190,59 @@ a:hover {
 .icon-padding {
     padding: 0em .5em;
 }
+.slideshow-container {
+    width: 100%;
+    margin: auto;
+    vertical-align: middle;
+    border: solid 2px orange;
+}
+
+.top-spacing {
+    margin-top: 4em;
+}
+
+.project-description {
+  padding: 1em 2em;
+  border: solid 2px orange;
+  background: white;
+}
+
+.slide-container {
+    width: 95%;
+    margin: auto;
+}
+.project-footer, .push{
+    bottom:0;
+    width: 100%;
+ }
+
+ .recipe-title{
+     color: rgb(218, 87, 0);
+     font-size: 5em;
+     padding-top: 1em;
+ }
+
+ .full-height {
+     height: 100%;
+ }
+
+.parent{
+    position: relative;
+}
+
+.child{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto
+}
+@media screen and (max-width: 991px) {
+    .slideshow-container{
+        margin-bottom: 3em;
+    }
+    .project-description{
+        margin-bottom: 3em;
+    }
+}
+
