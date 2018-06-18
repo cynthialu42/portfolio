@@ -117,7 +117,7 @@ body, html {
 }
 
 .title-size{
-    font-size: 5em;
+    font-size: 6rem;
 }
 
 .section-title {
@@ -226,17 +226,6 @@ a:hover {
      height: 100%;
  }
 
-.parent{
-    position: relative;
-}
-
-.child{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: auto
-}
 @media screen and (max-width: 991px) {
     .slideshow-container{
         margin-bottom: 3em;
