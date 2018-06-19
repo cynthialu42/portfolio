@@ -117,7 +117,7 @@ body, html {
 }
 
 .title-size{
-    font-size: 6rem;
+    font-size: 8vw;
 }
 
 .section-title {
@@ -157,7 +157,7 @@ body, html {
     font-family: 'mountains', sans-serif;
 }
 .title-details {
-    font-size: 1.5em;
+    font-size: 2vw;
 }
 
 .bold{
@@ -194,7 +194,6 @@ a:hover {
     width: 100%;
     margin: auto;
     vertical-align: middle;
-    border: solid 2px orange;
 }
 
 .top-spacing {
@@ -203,7 +202,6 @@ a:hover {
 
 .project-description {
   padding: 1em 2em;
-  border: solid 2px orange;
   background: white;
 }
 
@@ -218,20 +216,54 @@ a:hover {
 
  .recipe-title{
      color: rgb(218, 87, 0);
-     font-size: 5em;
+     font-size: 2em;
      padding-top: 1em;
+     font-family: 'Quicksand', sans-serif;
+     font-weight: bold;
  }
 
  .full-height {
      height: 100%;
  }
 
+ .orange-background{
+     background: sandybrown;
+     border-bottom: solid 1px rgb(230, 138, 58);
+ }
+
+ .quicksand{
+    font-family: 'Quicksand', sans-serif;
+ }
+
+ .demo-btn{
+    border: solid 1px rgb(230, 138, 58);
+ }
+
+ .orange-border-top{
+    border-top: solid 1px rgb(230, 138, 58);
+ }
 @media screen and (max-width: 991px) {
     .slideshow-container{
         margin-bottom: 3em;
     }
     .project-description{
         margin-bottom: 3em;
+    }
+    .background-img{
+        height: 75%;
+    }
+    .title-details{
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 749px) {
+
+    .background-img{
+        height: 60%;
+    }
+    .title-size{
+        font-size: 12vw;
     }
 }
 
