@@ -220,11 +220,13 @@ a:hover {
     margin-top: 4em;
 }
 
-.project-description {
+.project-description, .contact-form {
   padding: 1em 2em;
   background: white;
 }
-
+.contact-form {
+    margin: auto;
+}
 .slide-container {
     width: 95%;
     margin: auto;
@@ -235,14 +237,24 @@ a:hover {
     margin:auto;
  }
 
- .recipe-title{
+ .recipe-title, .contact-title{
      color: rgb(218, 87, 0);
      font-size: 2em;
      padding-top: 1em;
      font-family: 'Quicksand', sans-serif;
      font-weight: bold;
  }
-
+.contact-title{
+    color: rgb(1, 106, 141);
+}
+.contact-submit{
+    border: none;
+    background: rgb(1, 106, 141);
+    width: 100%;
+}
+.contact-submit:hover{
+    opacity: 50%;
+}
  .book-title{
      color: #401F68;
      font-size: 2em;
@@ -280,6 +292,10 @@ a:hover {
     border-top: solid 1px rgb(230, 138, 58);
  }
 
+ .blue-border-top{
+    border-top: solid 1px rgb(97,191,251);
+ }
+
  .purple-border-top{
     border-top: solid 1px #401F68;
  }
@@ -312,6 +328,9 @@ a:hover {
 
     .title-details{
         font-size: 4vw;
+    }
+    .about-img{
+        display: none;
     }
 }
 

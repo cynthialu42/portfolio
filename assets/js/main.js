@@ -45,6 +45,8 @@ $(document).ready(function(){
 
     $('.carousel').carousel({
       interval: 2000
-    })
+    });
+
+    $('[data-toggle="tooltip"]').tooltip();
     // $('.carousel').carousel('cycle');
 });
