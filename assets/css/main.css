@@ -209,13 +209,22 @@ a:hover {
     width: 95%;
     margin: auto;
 }
-.project-footer, .push{
+.project-footer{
     bottom:0;
     width: 100%;
+    margin:auto;
  }
 
  .recipe-title{
      color: rgb(218, 87, 0);
+     font-size: 2em;
+     padding-top: 1em;
+     font-family: 'Quicksand', sans-serif;
+     font-weight: bold;
+ }
+
+ .book-title{
+     color: #401F68;
      font-size: 2em;
      padding-top: 1em;
      font-family: 'Quicksand', sans-serif;
@@ -231,6 +240,14 @@ a:hover {
      border-bottom: solid 1px rgb(230, 138, 58);
  }
 
+ .purple-background{
+     background: #4E2A84;
+     border-bottom: solid 1px #401F68;
+ }
+
+ .purple-text {
+     color: #4E2A84;
+ }
  .quicksand{
     font-family: 'Quicksand', sans-serif;
  }
@@ -241,6 +258,13 @@ a:hover {
 
  .orange-border-top{
     border-top: solid 1px rgb(230, 138, 58);
+ }
+
+ .purple-border-top{
+    border-top: solid 1px #401F68;
+ }
+ .about {
+     margin: auto;
  }
 @media screen and (max-width: 991px) {
     .slideshow-container{
@@ -253,7 +277,7 @@ a:hover {
         height: 75%;
     }
     .title-details{
-        font-size: 4vw;
+        font-size: 3vw;
     }
 }
 
@@ -264,6 +288,10 @@ a:hover {
     }
     .title-size{
         font-size: 12vw;
+    }
+
+    .title-details{
+        font-size: 4vw;
     }
 }
 
