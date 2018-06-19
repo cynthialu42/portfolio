@@ -11,7 +11,7 @@ body, html {
     background-size: cover; */
 }
 .background-img { 
-    background: url(../images/checks.jpg); 
+    background: url(../images/sky-drawn.png); 
     /* background: url(../images/background-beautiful-bloom-54459.jpg); */
     /* background: url(../images/portfoliobackground.png); */
      /* Full height */
@@ -23,7 +23,18 @@ body, html {
      background-size: cover;
      
 }
+.test-background{
+    background: url(../images/sky-drawn-new.png); 
+    /* background: url(../images/background-beautiful-bloom-54459.jpg); */
+    /* background: url(../images/portfoliobackground.png); */
+     /* Full height */
+     height: 100%; 
 
+     /* Center and scale the image nicely */
+     background-position: center;
+     /* background-repeat: no-repeat; */
+     background-size: cover;
+}
 .gingham-yellow { 
     background: url(../images/gingham-yellow.png); 
     /* background: url(../images/background-beautiful-bloom-54459.jpg); */
@@ -41,7 +52,7 @@ body, html {
     width: 100%;
 }
 .background-longer { 
-    background: url(../images/checks.jpg); 
+    background: url(../images/sky-drawn-noclouds.png); 
     /* background: url(../images/background-beautiful-bloom-54459.jpg); */
     /* background: url(../images/portfoliobackground.png); */
      /* Full height */
@@ -100,8 +111,8 @@ body, html {
     width: 90%;
     height: auto;
     background: white;
-    border: solid 2px paleturquoise;
-    margin-bottom: 1em;
+    /* border: solid 2px deepskyblue; */
+    margin-bottom: 2em;
 }
 
 .sunflower {
@@ -135,7 +146,7 @@ body, html {
     bottom: 0;
     right: 0;
     margin: auto;
-    width: 100%;
+    max-width: 100%;
 }
 .header {
     margin-top: 4em;
@@ -149,7 +160,16 @@ body, html {
 .firebrick {
     color: firebrick;
 }
-
+.dark-green-text {
+    /* color: rgb(1, 106, 141); */
+    color: seagreen;
+}
+.dark-blue-text {
+    color: rgb(1, 106, 141);
+}
+.light-blue-text {
+    color: rgb(0, 125, 167);
+}
 .dark-orange{
     color: rgb(255, 145, 0);
 }
@@ -183,7 +203,7 @@ a:hover {
 }
 
 .footer {
-    background: powderblue;
+    background: lightskyblue;
  
 }
 
