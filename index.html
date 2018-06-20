@@ -22,23 +22,23 @@
     <!-- <script src = "https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css"></script> -->
 </head>
 <body>        
-    <nav id = "hey" class="hey navbar navbar-expand-lg navbar-light  d-flex justify-content-between" style = "background: rgb(97,191,251)">
+    <nav id = "hey" class="hey navbar navbar-expand-lg navbar-light  d-flex justify-content-between nav-background" >
 
-        <a class="navbar-brand bold text-light" href="#"><h3>Cynthia Lu</h3></a>
-        <button class="navbar-toggler text-light" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand bold dark-teal-text" href="#"><h3 class = "darker-teal-text">Cynthia Lu</h3></a>
+        <button class="navbar-toggler text-dark" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
             <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link bold text-light" href="#about"><h5>About</h5></a>
-            <a class="nav-item nav-link bold text-light" href="#projects"><h5>Projects</h5></a>
-            <a class="nav-item nav-link bold text-light" href="#contact"><h5>Contact</h5></a>
+            <a class="nav-item nav-link bold text-dark" href="#about"><h5 class = "darker-teal-text">About</h5></a>
+            <a class="nav-item nav-link bold text-dark" href="#projects"><h5 class = "darker-teal-text">Projects</h5></a>
+            <a class="nav-item nav-link bold text-dark" href="#contact"><h5 class = "darker-teal-text">Contact</h5></a>
             </div>
         </div> 
     </nav>
     
     <div class = 'background-img div-wrapper'>
-        <img class = 'bird-sunflower cyl' src = './assets/images/birdandsunflowernew.png'>
+        <!-- <img class = 'bird-sunflower cyl' src = './assets/images/birdandsunflowernew.png'> -->
 
         <!-- <div class="container full-height">
             <div class = 'row full-height d-flex justify-content-center align-middle'>
@@ -57,10 +57,10 @@
         <div class="container full-height d-flex justify-content-center align-items-center" >
             <div class = 'row' >
                 <div class="col-12">
-                    <h1 class = 'cyl title-size dark-turquoise mountains-font text-center dark-green-text' >Hi, I'm Cynthia</h1>
+                    <h1 class = 'cyl title-size mountains-font text-center dark-teal-text' >Hi, I'm Cynthia</h1>
                 </div>
                 <div class="col-12">
-                    <p class = 'title-details text-center dark-green-text' >
+                    <p class = 'title-details text-center teal-text' >
                         DEVELOPER ◇ ARTIST ◇ BIRD ENTHUSIAST
                     </p>  
                 </div>
@@ -68,26 +68,30 @@
 
         </div>
     </div>
-    <div class = "big-space"> </div>
+ 
+    <img src = "./assets/images/white-arrow-border.png" style = "width: 100%; top: 0;" />
+   
+    
+    <!-- <div class = "big-space"> </div> -->
     <div id = "about" class = 'container-fluid'>
             <div class="row">
                 <div class="col-12 d-flex justify-content-center">
-                    <h1 class = 'section-title quicksand dark-blue-text' >A B O U T</h1>
+                    <h1 class = 'section-title quicksand dark-teal-text' >A B O U T</h1>
                 </div>
             </div>
-            <div class="cyl row d-flex justify-content-between" >
+            <div class="row d-flex justify-content-between" >
                 <!-- <div class="col-3"> </div> -->
-                <div class = 'col-md-4 about-img'>
+                <div class = 'scroll-left col-md-4 about-img'>
                     <img src = "./assets/images/sakura.png" style = 'width: 100%'>
                 </div>
-                <div class="col-md-7 col-sm-10 about">
+                <div class="scroll-right col-md-7 col-sm-10 about">
                     <p  >
                         My background in Electrical Engineering and work experience as a technical problem solver has given me a strong aptitude for understanding the root cause of issues, empathizing with concerns, and following through with delivery of ideas and answers. </p>
                         <p >Currently, I am a user focused Full-Stack Developer with an interest in increasing user experience through design. 
                         I enjoy both team collaboration and independent brainstorming to pursue creative solutions and new innovations. 
                     </p>
-                    <p>I have experience in <strong>HTML/CSS</strong> and <strong>Javascript</strong>, as well as <strong>JQuery</strong> and <strong>React</strong>. On the server-side, I have worked with <strong>NodeJS</strong>, <strong>MySQL</strong>, and <strong>MongoDB</strong>.</p>
-                    <p class = 'dark-blue-text '><i class="far fa-envelope" ></i>  : clu2334@gmail.com</p>
+                    <p>I have experience in <strong class = 'dark-teal-text '>HTML/CSS</strong> and <strong class = 'dark-teal-text '>Javascript</strong>, as well as <strong class = 'dark-teal-text '>JQuery</strong> and <strong class = 'dark-teal-text '>React</strong>. On the server-side, I have worked with <strong class = 'dark-teal-text '>NodeJS</strong>, <strong class = 'dark-teal-text '>MySQL</strong>, and <strong class = 'dark-teal-text '>MongoDB</strong>.</p>
+                    <p class = 'dark-teal-text '><i class="far fa-envelope" ></i>  : clu2334@gmail.com</p>
                 </div>
                 <!-- <div class="col-3"> </div> -->
             </div>
@@ -99,11 +103,13 @@
             </div> -->
         </div>
     </div>
-    <div class="big-space"> </div>
+    <!-- <img src = "./assets/images/white-arrow-border2.png" style = "width: 100%; top: 0;" /> -->
+
+    <div class="big-space" style = "border-bottom: solid 2px rgb(117, 170, 158)"> </div>
     <div id = "projects" class = 'container-fluid background-longer'>
         <div class="row">
             <div class="col-12 d-flex justify-content-center">
-                <h1 class = 'section-title quicksand text-light' >P R O J E C T S</h1>
+                <h1 class = 'section-title quicksand dark-teal-text' >P R O J E C T S</h1>
             </div>
         </div>
         <div class="row">
@@ -213,24 +219,26 @@
             
         </div> -->
     <!-- </div> -->
-    <div class="big-space"></div>
+    <!-- <div class="big-space"></div> -->
+    <img src = "./assets/images/white-arrow-border.png" style = "width: 100%; top: 0;" />
+
     <div id = "contact" class="container-fluid footer">
         <div class="row">
             <div class="col-12 d-flex justify-content-center">
-                <h1 class = 'section-title quicksand text-light' >C O N T A C T&nbsp; M E</h1>
+                <h1 class = 'section-title quicksand dark-teal-text' >C O N T A C T&nbsp; M E</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-12 d-flex justify-content-center">
                 
                 <div class="icon-padding">
-                        <a href = "https://www.linkedin.com/in/cynthia-l-b6931459/" style = "color: white"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                        <a href = "https://www.linkedin.com/in/cynthia-l-b6931459/" ><i class="fab fa-linkedin-in fa-2x teal-text"></i></a>
                     </div>
                 <div class="icon-padding">
-                    <a href = "https://github.com/cynthialu42" style = "color: white"><i class="fab fa-github fa-2x"></i></a>
+                    <a href = "https://github.com/cynthialu42" ><i class="fab fa-github fa-2x teal-text"></i></a>
                 </div>
                 <div class="icon-padding" title="clu2334@gmail.com">
-                    <a href = "./contact.html"  style = "color: white" target = "_blank"><i class="far fa-envelope fa-2x" ></i></a>
+                    <a href = "./contact.html"  target = "_blank"><i class="far fa-envelope fa-2x teal-text" ></i></a>
                 </div>
             </div>
             <!-- <div class="col-6 d-flex justify-content-end  dark-turquoise">
@@ -283,10 +291,11 @@
                 </div>
             </div>
         </div> -->
-        <div class="row">
+        <div class="medium-space"></div>
+        <div class="row " style = "border-top: solid 1px rgb(63, 163, 140)">
             <div class="col-3"> </div>
             <div class="col-6 d-flex justify-content-center mt-5">
-                <p class = 'text-light' > © 2018 CYNTHIA LU</p>
+                <p class = 'dark-teal-text' > © 2018 CYNTHIA LU</p>
             </div>
             <div class="col-3"> </div>
         </div>

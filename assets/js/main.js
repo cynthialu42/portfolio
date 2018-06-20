@@ -17,8 +17,9 @@ $(document).ready(function(){
     window.sr = ScrollReveal({ reset: true });
 
     // Customizing a reveal set
-    sr.reveal('.cyl', { duration: 900 });
-
+    sr.reveal('.cyl', { duration: 1000, scale: .3});
+    sr.reveal('.scroll-left', { duration: 1000, origin: 'left', distance: '500px', scale: .5});
+    sr.reveal('.scroll-right', { duration: 1000, origin: 'right', distance: '500px', scale: .5});
     $("a").on('click', function(event) {
 
         // Make sure this.hash has a value before overriding default behavior
