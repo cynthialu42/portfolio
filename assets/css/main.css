@@ -104,22 +104,74 @@ body, html {
 .about-img {
     width: 100%;
 }
-
+.about-text {
+    font-size: 1.5em;
+}
 .cl-container {
     width: 95%;
 }
 
 .square {
-    width: 90%;
+    width: 100%;
     height: auto;
     background: white;
     /* border: solid 2px deepskyblue; */
     margin-bottom: 2em;
+    position: relative;
 }
+/* .overlay{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.267);
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    transition: all .5s ease;
+} */
 
+/* .overlay .overlay-inner{
+    position: absolute;
+    text-align:center;
+    top: 43%;
+    width: 100%;
+    bottom: 0;
+} */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(43, 42, 42);
+  }
+
+  .square:hover .overlay{
+      opacity:1;
+  }
+
+  .text {
+    color: white;
+    font-size: 1.3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .text p{
+      color: rgb(172, 172, 172);
+  }
+  
 .sunflower {
     width: 100%;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     /* border-top-left-radius: 20px;
     border-top-right-radius: 20px; */
 }
@@ -150,45 +202,29 @@ body, html {
     margin: auto;
     max-width: 100%;
 }
+
+.airplane {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    margin: auto;
+    width: 300px;
+}
+
+.mail-bird {
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+    margin: auto;
+    width: 10%;
+}
+
 .header {
     margin-top: 4em;
 }
 
-.teal-text{
-    color: rgb(117,170,158);
-}
-.nav-background {
-    background: rgba(255, 255, 255, 0.795);
-    border-bottom: solid 1px rgb(117,170,158);
-}
-.dark-teal-text {
-    color: rgb(63, 163, 140);
-}
-.darker-teal-text {
-    color: rgb(26, 105, 87);
-}
-.dark-turquoise {
-    color: rgb(12, 134, 98);
-}
-.turquoise {
-    color: rgb(28, 173, 130);
-}
-.firebrick {
-    color: firebrick;
-}
-.dark-green-text {
-    /* color: rgb(1, 106, 141); */
-    color: seagreen;
-}
-.dark-blue-text {
-    color: rgb(1, 106, 141);
-}
-.light-blue-text {
-    color: rgb(0, 125, 167);
-}
-.dark-orange{
-    color: rgb(255, 145, 0);
-}
+
+
 .mountains-font {
     font-family: 'mountains', sans-serif;
 }
@@ -213,15 +249,8 @@ a:hover {
     text-decoration: none;
 }
 
-.nav-white {
-    background: rgba(255, 255, 255, 0.63);
 
-}
 
-/* .footer {
-    background: lightskyblue;
- 
-} */
 
 .icon-padding {
     padding: 0em .5em;
@@ -253,57 +282,94 @@ a:hover {
     margin:auto;
  }
 
- .recipe-title, .contact-title{
-     color: rgb(218, 87, 0);
-     font-size: 2em;
-     padding-top: 1em;
-     font-family: 'Quicksand', sans-serif;
-     font-weight: bold;
- }
-.contact-title{
-    color: rgb(1, 106, 141);
-}
-.contact-submit{
-    border: none;
-    background: rgb(1, 106, 141);
-    width: 100%;
-}
-.contact-submit:hover{
-    opacity: 50%;
-}
- .book-title{
-     color: #401F68;
-     font-size: 2em;
-     padding-top: 1em;
-     font-family: 'Quicksand', sans-serif;
-     font-weight: bold;
- }
 
+ .airplane {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    margin: auto;
+    max-width: 300px;
+}
  .full-height {
      height: 100%;
  }
 
- .orange-background{
-     background: sandybrown;
-     border-bottom: solid 1px rgb(230, 138, 58);
- }
-
- .purple-background{
-     background: #4E2A84;
-     border-bottom: solid 1px #401F68;
- }
-
- .purple-text {
-     color: #4E2A84;
- }
  .quicksand{
     font-family: 'Quicksand', sans-serif;
  }
 
- .demo-btn{
-    border: solid 1px rgb(230, 138, 58);
+
+
+ .about {
+     margin: auto;
  }
 
+.seemorebtn{
+    border: 2px solid rgb(63, 163, 140);
+    padding: .5em 1.5em;
+    color: rgb(26, 105, 87);
+    font-size: 1em;
+}
+
+.arrow{
+    font-size: 1em;
+    
+}
+
+
+/* ======================= */
+/* =========COLORS======== */
+/* ======================= */
+
+.nav-white {
+    background: rgba(255, 255, 255, 0.63);
+}
+.nav-background {
+    background: rgba(255, 255, 255, 0.795);
+    border-bottom: solid 1px rgb(117,170,158);
+}
+
+/* text color */
+.teal-text{
+    color: rgb(117,170,158);
+}
+
+.dark-teal-text {
+    color: rgb(63, 163, 140);
+}
+
+.purple-text {
+    color: #4E2A84;
+}
+.darker-teal-text {
+    color: rgb(26, 105, 87);
+}
+.dark-turquoise {
+    color: rgb(12, 134, 98);
+}
+.turquoise {
+    color: rgb(28, 173, 130);
+}
+.firebrick {
+    color: firebrick;
+}
+.dark-green-text {
+    color: seagreen;
+}
+.dark-blue-text {
+    color: rgb(1, 106, 141);
+}
+.light-blue-text {
+    color: rgb(37, 141, 175);
+}
+.dark-orange{
+    color: rgb(255, 145, 0);
+}
+.dark-green{
+    color: seagreen;
+}
+
+/* border color */
  .orange-border-top{
     border-top: solid 1px rgb(230, 138, 58);
  }
@@ -315,9 +381,64 @@ a:hover {
  .purple-border-top{
     border-top: solid 1px #401F68;
  }
- .about {
-     margin: auto;
+
+ .green-border-top{
+    border-top: solid 1px seagreen;
  }
+
+
+
+
+ /* background color */
+
+ .orange-background{
+    background: sandybrown;
+    border-bottom: solid 1px rgb(230, 138, 58);
+}
+
+.purple-background{
+    background: #4E2A84;
+    border-bottom: solid 1px #401F68;
+}
+
+.green-background {
+    background: seagreen;
+    border-bottom: solid 1px rgb(23, 92, 23);
+}
+
+
+/* title text*/
+.recipe-title, .contact-title, .book-title, .scraper-title{
+    color: rgb(218, 87, 0);
+    font-size: 2em;
+    padding-top: 1em;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+.contact-title{
+   color: rgb(1, 106, 141);
+}
+.book-title{
+    color: #401F68;
+}
+
+.scraper-title{
+    color: forestgreen;
+}
+.contact-submit{
+   border: none;
+   background: rgb(1, 106, 141);
+   width: 100%;
+}
+.contact-submit:hover{
+   opacity: 50%;
+}
+
+.demo-btn{
+    border: solid 1px rgb(230, 138, 58);
+ }
+
+ /* MEDIA QUERIES */
 @media screen and (max-width: 991px) {
     .slideshow-container{
         margin-bottom: 3em;
@@ -347,6 +468,20 @@ a:hover {
     }
     .about-img{
         display: none;
+    }
+    .airplane {
+        position: absolute;
+        bottom: 0;
+        right: 10%;
+        margin: auto;
+        max-width: 40%;
+    }
+    .mail-bird {
+        position: absolute;
+        bottom: 0;
+        right: 15%;
+        margin: auto;
+        width: 10%;
     }
 }
 

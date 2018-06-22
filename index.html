@@ -19,6 +19,8 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     <script src="./assets/js/main.js"></script>
     <link rel="stylesheet" href="./assets/fizzed/font-mfizz.css">
+    <!-- <link rel="stylesheet/less" type="text/css" href="styles.less" /> -->
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.2/less.min.js" ></script> -->
     <!-- <script src = "https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css"></script> -->
 </head>
 <body>        
@@ -39,7 +41,7 @@
     
     <div class = 'background-img div-wrapper'>
         <!-- <img class = 'bird-sunflower cyl' src = './assets/images/birdandsunflowernew.png'> -->
-
+        <a href = "#about"><img class = 'airplane scroll-right-bird' src = './assets/images/another-bird.png'></a>
         <!-- <div class="container full-height">
             <div class = 'row full-height d-flex justify-content-center align-middle'>
                 <div class="col-12 header">
@@ -57,16 +59,31 @@
         <div class="container full-height d-flex justify-content-center align-items-center" >
             <div class = 'row' >
                 <div class="col-12">
-                    <h1 class = 'cyl title-size mountains-font text-center dark-teal-text' >Hi, I'm Cynthia</h1>
+                    <h1 class = 'title-size mountains-font text-center dark-teal-text' >Hi, I'm Cynthia</h1>
                 </div>
                 <div class="col-12">
                     <p class = 'title-details text-center teal-text' >
                         DEVELOPER ◇ ARTIST ◇ BIRD ENTHUSIAST
                     </p>  
                 </div>
+                <div class="col-12 d-flex justify-content-center align-content-center">
+                    <a href="#about" id = "seemore" class = "text-center seemorebtn hvr-fade hvr-icon-rotate" >See more &nbsp;<i id = "arr" class="fas fa-arrow-right hvr-icon arrow"></i></a>
+                </div>
+                <!-- <a href="#" class="hvr-icon-rotate">
+					Icon Rotate <i class="fa fa-paperclip hvr-icon"></i>
+				</a> -->
+                <!-- <div id="wrapper">
+                    <a href="#" class="btn btn-info bird">
+                        <i class="fas fa-angle-right arrow-icon"></i>  
+                      <p class="title bird-title">Title</p>
+                    </a>
+                  </div> -->
             </div>
 
         </div>
+        <!-- <div class = "downArrow bounce scroll-arrow">
+            <i class="fas fa-angle-down"></i>
+        </div> -->
     </div>
  
     <img src = "./assets/images/white-arrow-border.png" style = "width: 100%; top: 0;" />
@@ -82,14 +99,12 @@
             <div class="row d-flex justify-content-between" >
                 <!-- <div class="col-3"> </div> -->
                 <div class = 'scroll-left col-md-4 about-img'>
-                    <img src = "./assets/images/sakura.png" style = 'width: 100%'>
+                    <img src = "./assets/images/testprofilepic1.png" style = 'width: 100%; border: 3px solid teal'>
                 </div>
                 <div class="scroll-right col-md-7 col-sm-10 about">
-                    <p  >
-                        My background in Electrical Engineering and work experience as a technical problem solver has given me a strong aptitude for understanding the root cause of issues, empathizing with concerns, and following through with delivery of ideas and answers. </p>
-                        <p >Currently, I am a user focused Full-Stack Developer with an interest in increasing user experience through design. 
-                        I enjoy both team collaboration and independent brainstorming to pursue creative solutions and new innovations. 
-                    </p>
+                        <p class = "about-text">I am a user focused Full-Stack Developer with an interest in increasing user experience through design. </p>
+                        <p >My background in Electrical Engineering and work experience as a technical problem solver has given me a strong aptitude for understanding the root cause of issues, empathizing with concerns, and following through with delivery of ideas and answers. </p>
+                        <p> </p>
                     <p>I have experience in <strong class = 'dark-teal-text '>HTML/CSS</strong> and <strong class = 'dark-teal-text '>Javascript</strong>, as well as <strong class = 'dark-teal-text '>JQuery</strong> and <strong class = 'dark-teal-text '>React</strong>. On the server-side, I have worked with <strong class = 'dark-teal-text '>NodeJS</strong>, <strong class = 'dark-teal-text '>MySQL</strong>, and <strong class = 'dark-teal-text '>MongoDB</strong>.</p>
                     <p class = 'dark-teal-text '><i class="far fa-envelope" ></i>  : clu2334@gmail.com</p>
                 </div>
@@ -107,35 +122,72 @@
 
     <div class="big-space" style = "border-bottom: solid 2px rgb(117, 170, 158)"> </div>
     <div id = "projects" class = 'container-fluid background-longer'>
+        <div class="container">
+
+        
         <div class="row">
             <div class="col-12 d-flex justify-content-center">
                 <h1 class = 'section-title quicksand dark-teal-text' >P R O J E C T S</h1>
             </div>
         </div>
         <div class="row">
-             <div class = 'col-md-4 d-flex justify-content-center enlarge'>
+             <div class = 'col-md-6 d-flex justify-content-center'>
                 <div class = 'square cyl'>
-                        <a href = './recipe.html'><img class = 'sunflower' src = './assets/images/recipeplus.png'></a>
-                        </a>
-                        <a href = './recipe.html'><h4 class="text-box dark-green-text quicksand">Recipe++</h4></a>
-                        <a href = './recipe.html'><p class = "text-box text-dark">Make a meal using the ingredients you have at home</p></a>
+                        <a href = './recipe.html'>
+                            <img class = 'sunflower' src = './assets/images/recipe54.JPG'>
+                            <div class="overlay">
+                                <div class="text">
+                                    <h2>Recipe++</h2>
+                                    <p>HTML/CSS ◇ JQuery ◇ APIs</p>
+                                </div>
+                                
+                            </div>
+                        </a>      
                 </div>
             </div>
-            <div class = 'col-md-4 d-flex justify-content-center enlarge'>
+            <div class = 'col-md-6 d-flex justify-content-center'>
+                <div class = 'square cyl'>
+                    <a href = './book.html'>
+                        <img class = 'sunflower' src = './assets/images/book54.JPG'>
+                        <div class="overlay">
+                            <div class="text">
+                                <h2>BookBuddies</h2>
+                                <p style = "width: 100%">HTML/CSS ◇ NodeJS ◇ MySQL</p>
+                            </div>
+                            
+                        </div>
+                    </a>      
+                </div>
+            </div>
+            <div class = 'col-md-6 d-flex justify-content-center'>
+                <div class = 'square cyl'>
+                    <a href = './scraper.html'>
+                        <img class = 'sunflower' src = './assets/images/scraper54.JPG'>
+                        <div class="overlay">
+                            <div class="text">
+                                <h2>Web Scraper</h2>
+                                <p>HTML/CSS ◇ NodeJS ◇ MongoDB</p>
+                            </div>
+                            
+                        </div>
+                    </a>      
+                </div>
+            </div>
+            <!-- <div class = 'col-md-6 d-flex justify-content-center'>
                 <div class = 'square cyl'>
                         <a href = './book.html'><img class = 'sunflower' src = './assets/images/nubookbuddies.png'></a>
                         <a href = './book.html'><h4 class="text-box dark-green-text quicksand">NU BookBuddies</h4></a>
                         <a href = './book.html'><p class = "text-box text-dark">An easy way to buy and sell textbooks for students</p></a>
                 </div>
             </div>
-            <!-- <div class = 'col-md-4 d-flex justify-content-center enlarge'>
+             <div class = 'col-md-6 d-flex justify-content-center'>
                 <div class = 'square cyl'>
-                        <img class = 'sunflower' src = './assets/images/sunflowertest.jpeg'>
-                        <h4 class="text-box">Project Name</h4>
-                        <p class = "text-box">sldjfklsdjflsd jsdkfjs djksdf skdfjsdks dsdjfksdfj sdk</p>
+                    <a href = './scraper.html'><img class = 'sunflower' src = './assets/images/bpscraper.png'></a>
+                    <a href = './scraper.html'><h4 class="text-box dark-green-text quicksand">BoredPanda News Scraper</h4></a>
+                    <a href = './scraper.html'><p class = "text-box text-dark">Scrape articles and save your favorites in a database</p></a>
                 </div>
-            </div>
-            <div class = 'col-md-4 d-flex justify-content-center enlarge'>
+            </div> -->
+            <!--<div class = 'col-md-4 d-flex justify-content-center enlarge'>
                 <div class = 'square cyl'>
                         <img class = 'sunflower' src = './assets/images/sunflowertest.jpeg'>
                         <h4 class="text-box">Project Name</h4>
@@ -156,6 +208,7 @@
                         <p class = "text-box">sldjfklsdjflsd jsdkfjs djksdf skdfjsdks dsdjfksdfj sdk</p>
                 </div>
             </div> -->
+        </div>
         </div>
     </div>
 
@@ -292,13 +345,18 @@
             </div>
         </div> -->
         <div class="medium-space"></div>
-        <div class="row " style = "border-top: solid 1px rgb(63, 163, 140)">
-            <div class="col-3"> </div>
-            <div class="col-6 d-flex justify-content-center mt-5">
-                <p class = 'dark-teal-text' > © 2018 CYNTHIA LU</p>
+        <div class="div-wrapper">
+             <a href = "./contact.html"><img class = 'mail-bird scroll-bottom' src = './assets/images/bird-bottom.png'></a>
+
+            <div class="row " style = "border-top: solid 1px rgb(63, 163, 140)">
+                <div class="col-3"> </div>
+                <div class="col-6 d-flex justify-content-center mt-5">
+                    <p class = 'dark-teal-text' > © 2018 CYNTHIA LU</p>
+                </div>
+                <div class="col-3"> </div>
             </div>
-            <div class="col-3"> </div>
         </div>
+        
     
     
     <!-- <div class = 'background-img'>
