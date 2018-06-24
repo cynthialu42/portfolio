@@ -1,370 +1,170 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Cynthia Lu</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="./assets/images/cynthialogobold.png">
-  <link rel="stylesheet" type="text/css" media="screen" href="./css/reset.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cynthia Lu</title>
+    <link rel="icon" href="./assets/images/cynthialogobold.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/main.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/animate.css" />
-
-  <link href="https://fonts.googleapis.com/css?family=Raleway|Quicksand" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/animate.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/main.css" />
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-    <script src="./assets/js/main.js"></script>
-    <link rel="stylesheet" href="./assets/fizzed/font-mfizz.css">
-    <!-- <link rel="stylesheet/less" type="text/css" href="styles.less" /> -->
-    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.2/less.min.js" ></script> -->
-    <!-- <script src = "https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css"></script> -->
-</head>
-<body>        
-    <nav id = "hey" class="hey navbar navbar-expand-lg navbar-light  d-flex justify-content-between nav-background" >
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Quicksand|Montserrat|Encode+Sans+Semi+Expanded:300" rel="stylesheet">
+    <script type="text/javascript" src="./assets/js/particles.min.js"></script>
 
-        <a class="navbar-brand bold dark-teal-text" href="#"><h3 class = "darker-teal-text">Cynthia Lu</h3></a>
-        <button class="navbar-toggler text-dark" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+</head>
+<body >
+    <section class="height-fix flex">
+        <div id="particles-js" class="particles-background canvas"></div>
+        <div class="flex">
+            <div class="text encode-sans welcome-text" >
+                Hi, I'm <span class = 'pink-text'>Cynthia</span>
+            </div>
+            <p class = 'welcome-details text-center white-text' >
+                DEVELOPER ◇ ARTIST ◇ BIRD ENTHUSIAST
+            </p>
+            <a href="#navbar" id = "seemore" class = "text-center seemorebtn hvr-fade hvr-icon-rotate large-button" ><div class = "btn-text encode-sans" >See more &nbsp;<i id = "arr" class="fas fa-arrow-right hvr-icon arrow"></i></div></a>
+        </div>
+    </section>
+        
+    
+    <nav id = "navbar" class="navbar navbar-dark navbar-expand-lg d-flex justify-content-between nav-background" >
+        <div class="brand">
+                <!-- <img class = "logo" src = "./assets/images/cynthialogobold.png"> -->
+                <a class="navbar-brand" href="#"><h3 class = "nav-colors">Cynthia Lu</h3></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
             <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link bold text-dark" href="#about"><h5 class = "darker-teal-text">About</h5></a>
-            <a class="nav-item nav-link bold text-dark" href="#projects"><h5 class = "darker-teal-text">Projects</h5></a>
-            <a class="nav-item nav-link bold text-dark" href="#contact"><h5 class = "darker-teal-text">Contact</h5></a>
+            <a class="nav-item nav-link" href="#about"><h5 class = "nav-colors">About</h5></a>
+            <a class="nav-item nav-link" href="#projects"><h5 class = "nav-colors">Projects</h5></a>
+            <a class="nav-item nav-link" href="#contact"><h5 class = "nav-colors">Contact</h5></a>
             </div>
         </div> 
     </nav>
-    
-    <div class = 'background-img div-wrapper'>
-        <!-- <img class = 'bird-sunflower cyl' src = './assets/images/birdandsunflowernew.png'> -->
-        <!-- <a href = "#about"><img class = 'airplane scroll-right-bird' src = './assets/images/another-bird.png'></a> -->
-        <!-- <div class="container full-height">
-            <div class = 'row full-height d-flex justify-content-center align-middle'>
-                <div class="col-12 header">
-                    <div class = "d-flex justify-content-center align-middle">
-                        <h1 class = 'test cyl title-size dark-turquoise mountains-font'>Hi, I'm Cynthia</h1>
-                    </div>
-                    <div class = "d-flex justify-content-center align-middle dark-turquoise">
-                        <p class = 'title-details'>
-                            WEB DEVELOPER ◇ ARTIST ◇ BIRD ENTHUSIAST
-                        </p>  
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <div class="container full-height d-flex justify-content-center align-items-center" >
-            <div class = 'row' >
-                <div class="col-12">
-                    <h1 class = 'title-size mountains-font text-center dark-teal-text' >Hi, I'm Cynthia</h1>
-                </div>
-                <div class="col-12">
-                    <p class = 'title-details text-center teal-text' >
-                        DEVELOPER ◇ ARTIST ◇ BIRD ENTHUSIAST
-                    </p>  
-                </div>
-                <div class="col-12 d-flex justify-content-center align-content-center">
-                    <a href="#about" id = "seemore" class = "text-center seemorebtn hvr-fade hvr-icon-rotate" >See more &nbsp;<i id = "arr" class="fas fa-arrow-right hvr-icon arrow"></i></a>
-                </div>
-                <!-- <a href="#" class="hvr-icon-rotate">
-					Icon Rotate <i class="fa fa-paperclip hvr-icon"></i>
-				</a> -->
-                <!-- <div id="wrapper">
-                    <a href="#" class="btn btn-info bird">
-                        <i class="fas fa-angle-right arrow-icon"></i>  
-                      <p class="title bird-title">Title</p>
-                    </a>
-                  </div> -->
-            </div>
 
+    <div id = "about" class = 'container-fluid white-background about-section'>
+        <div class="row about-row">
+            <div class="col-12 d-flex justify-content-center">
+                <h1 class = 'section-title quicksand blue-text pb-5 scroll-right' >A B O U T</h1>
+            </div>
         </div>
-        <!-- <div class = "downArrow bounce scroll-arrow">
-            <i class="fas fa-angle-down"></i>
-        </div> -->
+        <div class="row d-flex justify-content-around align-items-center text-left" >
+            <div class = 'scroll-left-delay col-md-4 about-img'>
+                <img class = 'teal-border about-img' src = "./assets/images/testprofilepic1.png" >
+            </div>
+            <div class="scroll-right-delay col-md-7 col-sm-10 about blue-text">
+                    <p class = "about-text ">I am a user focused <strong class = "pink-text">Full-Stack Developer</strong> with an interest in increasing user experience through design. </p>
+                    <p class = "about-details">My background in Electrical Engineering and work experience as a technical problem solver has given me a strong aptitude for understanding the root cause of issues, empathizing with concerns, and following through with delivery of ideas and answers. </p>
+                    <p> </p>
+                <p class = "about-details">I have experience in <strong class = 'pink-text '>HTML/CSS</strong> and <strong class = 'pink-text '>Javascript</strong>, as well as <strong class = 'pink-text '>JQuery</strong> and <strong class = 'pink-text '>React</strong>. On the server-side, I have worked with <strong class = 'pink-text '>NodeJS</strong>, <strong class = 'pink-text '>Express</strong>, <strong class = 'pink-text '>MySQL</strong>, and <strong class = 'pink-text '>MongoDB</strong>.</p>
+                <a href = "./contact.html"  target = "_blank"><p class = 'teal-text '><i class="far fa-envelope" ></i> <strong> : clu2334@gmail.com</strong></p></a>
+            </div>
+        </div>
     </div>
- 
-    <img src = "./assets/images/white-arrow-border.png" style = "width: 100%; top: 0;" />
-   
-    
-    <!-- <div class = "big-space"> </div> -->
-    <div id = "about" class = 'container-fluid'>
+
+    <div id = "projects" class = 'container-fluid grey-background project-section border-top-teal'>
+        <div class="container">
             <div class="row">
                 <div class="col-12 d-flex justify-content-center">
-                    <h1 class = 'section-title quicksand dark-teal-text' >A B O U T</h1>
+                    <h1 class = 'section-title quicksand dark-teal-text pb-5 scroll-left' >P R O J E C T S</h1>
                 </div>
             </div>
-            <div class="row d-flex justify-content-between" >
-                <!-- <div class="col-3"> </div> -->
-                <div class = 'scroll-left col-md-4 about-img'>
-                    <img src = "./assets/images/testprofilepic1.png" style = 'width: 100%; border: 3px solid teal'>
+            <div class="row">
+                <div class = 'col-md-6 d-flex justify-content-center'>
+                    <div class = 'square cyl'>
+                            <a href = './recipe.html'>
+                                <img class = 'sunflower' src = './assets/images/recipe54.JPG'>
+                                <div class="overlay">
+                                    <div class="project-text">
+                                        <h2>Recipe++</h2>
+                                        <p>HTML/CSS ◇ JQuery ◇ APIs</p>
+                                    </div>
+                                    
+                                </div>
+                            </a>      
+                    </div>
                 </div>
-                <div class="scroll-right col-md-7 col-sm-10 about">
-                        <p class = "about-text">I am a user focused Full-Stack Developer with an interest in increasing user experience through design. </p>
-                        <p >My background in Electrical Engineering and work experience as a technical problem solver has given me a strong aptitude for understanding the root cause of issues, empathizing with concerns, and following through with delivery of ideas and answers. </p>
-                        <p> </p>
-                    <p>I have experience in <strong class = 'dark-teal-text '>HTML/CSS</strong> and <strong class = 'dark-teal-text '>Javascript</strong>, as well as <strong class = 'dark-teal-text '>JQuery</strong> and <strong class = 'dark-teal-text '>React</strong>. On the server-side, I have worked with <strong class = 'dark-teal-text '>NodeJS</strong>, <strong class = 'dark-teal-text '>MySQL</strong>, and <strong class = 'dark-teal-text '>MongoDB</strong>.</p>
-                    <p class = 'dark-teal-text '><i class="far fa-envelope" ></i>  : clu2334@gmail.com</p>
-                </div>
-                <!-- <div class="col-3"> </div> -->
-            </div>
-            <!-- <div class="col-md-8">
-                <div class = "d-flex justify-content-center align-items-center">
-                    <h1 class = ''>Hi, I'm Cynthia</h1>
-                </div>
-                <img class = "about-img" src = "./assets/images/sunflowertest.jpeg">
-            </div> -->
-        </div>
-    </div>
-    <!-- <img src = "./assets/images/white-arrow-border2.png" style = "width: 100%; top: 0;" /> -->
-
-    <div class="big-space" style = "border-bottom: solid 2px rgb(117, 170, 158)"> </div>
-    <div id = "projects" class = 'container-fluid background-longer'>
-        <div class="container">
-
-        
-        <div class="row">
-            <div class="col-12 d-flex justify-content-center">
-                <h1 class = 'section-title quicksand dark-teal-text' >P R O J E C T S</h1>
-            </div>
-        </div>
-        <div class="row">
-             <div class = 'col-md-6 d-flex justify-content-center'>
-                <div class = 'square cyl'>
-                        <a href = './recipe.html'>
-                            <img class = 'sunflower' src = './assets/images/recipe54.JPG'>
+                <div class = 'col-md-6 d-flex justify-content-center'>
+                    <div class = 'square cyl'>
+                        <a href = './book.html'>
+                            <img class = 'sunflower' src = './assets/images/book54.JPG'>
                             <div class="overlay">
-                                <div class="text">
-                                    <h2>Recipe++</h2>
-                                    <p>HTML/CSS ◇ JQuery ◇ APIs</p>
+                                <div class="project-text">
+                                    <h2>BookBuddies</h2>
+                                    <p style = "width: 100%">HTML/CSS ◇ NodeJS ◇ MySQL</p>
                                 </div>
                                 
                             </div>
                         </a>      
+                    </div>
                 </div>
-            </div>
-            <div class = 'col-md-6 d-flex justify-content-center'>
-                <div class = 'square cyl'>
-                    <a href = './book.html'>
-                        <img class = 'sunflower' src = './assets/images/book54.JPG'>
-                        <div class="overlay">
-                            <div class="text">
-                                <h2>BookBuddies</h2>
-                                <p style = "width: 100%">HTML/CSS ◇ NodeJS ◇ MySQL</p>
+                <div class = 'col-md-6 d-flex justify-content-center'>
+                    <div class = 'square cyl'>
+                        <a href = './scraper.html'>
+                            <img class = 'sunflower' src = './assets/images/scraper54.JPG'>
+                            <div class="overlay">
+                                <div class="project-text">
+                                    <h2>Web Scraper</h2>
+                                    <p>HTML/CSS ◇ NodeJS ◇ MongoDB</p>
+                                </div>
                             </div>
-                            
-                        </div>
-                    </a>      
+                        </a>      
+                    </div>
                 </div>
             </div>
-            <div class = 'col-md-6 d-flex justify-content-center'>
-                <div class = 'square cyl'>
-                    <a href = './scraper.html'>
-                        <img class = 'sunflower' src = './assets/images/scraper54.JPG'>
-                        <div class="overlay">
-                            <div class="text">
-                                <h2>Web Scraper</h2>
-                                <p>HTML/CSS ◇ NodeJS ◇ MongoDB</p>
-                            </div>
-                            
-                        </div>
-                    </a>      
-                </div>
-            </div>
-            <!-- <div class = 'col-md-6 d-flex justify-content-center'>
-                <div class = 'square cyl'>
-                        <a href = './book.html'><img class = 'sunflower' src = './assets/images/nubookbuddies.png'></a>
-                        <a href = './book.html'><h4 class="text-box dark-green-text quicksand">NU BookBuddies</h4></a>
-                        <a href = './book.html'><p class = "text-box text-dark">An easy way to buy and sell textbooks for students</p></a>
-                </div>
-            </div>
-             <div class = 'col-md-6 d-flex justify-content-center'>
-                <div class = 'square cyl'>
-                    <a href = './scraper.html'><img class = 'sunflower' src = './assets/images/bpscraper.png'></a>
-                    <a href = './scraper.html'><h4 class="text-box dark-green-text quicksand">BoredPanda News Scraper</h4></a>
-                    <a href = './scraper.html'><p class = "text-box text-dark">Scrape articles and save your favorites in a database</p></a>
-                </div>
-            </div> -->
-            <!--<div class = 'col-md-4 d-flex justify-content-center enlarge'>
-                <div class = 'square cyl'>
-                        <img class = 'sunflower' src = './assets/images/sunflowertest.jpeg'>
-                        <h4 class="text-box">Project Name</h4>
-                        <p class = "text-box">sldjfklsdjflsd jsdkfjs djksdf skdfjsdks dsdjfksdfj sdk</p>
-                </div>
-            </div>
-            <div class = 'col-md-4 d-flex justify-content-center enlarge'>
-                <div class = 'square cyl'>
-                        <img class = 'sunflower' src = './assets/images/sunflowertest.jpeg'>
-                        <h4 class="text-box">Project Name</h4>
-                        <p class = "text-box">sldjfklsdjflsd jsdkfjs djksdf skdfjsdks dsdjfksdfj sdk</p>
-                </div>
-            </div>
-            <div class = 'col-md-4 d-flex justify-content-center enlarge'>
-                <div class = 'square cyl'>
-                        <img class = 'sunflower' src = './assets/images/sunflowertest.jpeg'>
-                        <h4 class="text-box">Project Name</h4>
-                        <p class = "text-box">sldjfklsdjflsd jsdkfjs djksdf skdfjsdks dsdjfksdfj sdk</p>
-                </div>
-            </div> -->
-        </div>
         </div>
     </div>
 
-    <!-- <div id = "skills" class="container-fluid">
-        <div class="row">
-            <div class="col-12 d-flex justify-content-center">
-                <h1 class = 'section-title quicksand dark-blue-text' >S K I L L S</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12-md d-flex justify-content-center align-content-center text-dark"> -->
-                <!-- <div class="icon-padding">
-                    <i class="fab fa-html5 fa-3x"></i>
-                </div>
-                <div class="icon-padding">
-                    <i class="fab fa-js fa-3x"></i>
-                </div>
-                <div class="icon-padding">
-                    <i class="fab fa-node-js fa-3x"></i>
-                </div>
-                <div class="icon-padding">
-                    <i class="fab fa-react fa-3x"></i>
-                </div>
-                <div class="icon-padding">
-                    <i class="fas fa-database fa-3x"></i>
-                </div> -->
-                <!-- <div class="icon-padding">
-                    <i class="icon-html5-alt" style  = 'font-size: 3em'></i>
-                </div>
-                <div class="icon-padding">
-                    <i class="icon-bootstrap" style = "font-size: 3em" title = "Bootstrap 4"></i>
-                </div>
-                <div class="icon-padding">
-                    <i class="icon-jquery" style = "font-size: 3em"></i>
-                </div>
-                <div class="icon-padding">
-                    <i class="icon-reactjs" style = "font-size: 3em"></i>
-                </div>
-                <div class="icon-padding">
-                    <i class="icon-nodejs" style = "font-size: 3em"></i>
-                </div>
-                <div class = "icon-padding">
-                        <i class="icon-mongodb" style = "font-size: 3em"></i>
-                    </div>
-                <div class="icon-padding">
-                    <i class="icon-database" style = "font-size: 3em"></i>
-                </div>
-                 -->
 
-                    <!-- <i class="fab fa-js fa-3x"></i>
-                    <i class="fab fa-css3-alt fa-3x"></i>
-                    <i class="fab fa-html5 fa-3x"></i>
-                    <i class="fab fa-node-js fa-3x"></i>
-                    <i class="fab fa-git fa-3x"></i> -->
-            <!-- </div>
-        </div> -->
-
-            
-        
-        <!-- <div class="row">
-            
-        </div> -->
-    <!-- </div> -->
-    <!-- <div class="big-space"></div> -->
-    <img src = "./assets/images/white-arrow-border.png" style = "width: 100%; top: 0;" />
-
-    <div id = "contact" class="container-fluid footer">
-        <div class="row">
-            <div class="col-12 d-flex justify-content-center">
-                <h1 class = 'section-title quicksand dark-teal-text' >C O N T A C T&nbsp; M E</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 d-flex justify-content-center">
-                
-                <div class="icon-padding">
-                        <a href = "https://www.linkedin.com/in/cynthia-l-b6931459/" ><i class="fab fa-linkedin-in fa-2x teal-text"></i></a>
-                    </div>
-                <div class="icon-padding">
-                    <a href = "https://github.com/cynthialu42" ><i class="fab fa-github fa-2x teal-text"></i></a>
-                </div>
-                <div class="icon-padding" title="clu2334@gmail.com">
-                    <a href = "./contact.html"  target = "_blank"><i class="far fa-envelope fa-2x teal-text" ></i></a>
-                </div>
-            </div>
-            <!-- <div class="col-6 d-flex justify-content-end  dark-turquoise">
-                <div class="icon-padding">
-                    <i class="far fa-envelope fa-2x"></i>
-                    <span>clu2334@gmail.com</span>
-                </div>
-            </div> -->
-            <!-- <div class="col-6 d-flex justify-content-start  dark-turquoise">
-                <div class="icon-padding">
-                    <i class="fab fa-linkedin-in fa-2x"></i>
-                </div>
-                <div class="icon-padding">
-                    <i class="fab fa-github fa-2x"></i>
-                </div>
-                <div class="icon-padding">
-                    <i class="fab fa-codepen fa-2x"></i>
-                </div>
-                <div class="icon-padding">
-                    <i class="fab fa-stack-overflow fa-2x"></i>
-                </div>-->
-
-                    <!-- <i class="fab fa-js fa-3x"></i>
-                    <i class="fab fa-css3-alt fa-3x"></i>
-                    <i class="fab fa-html5 fa-3x"></i>
-                    <i class="fab fa-node-js fa-3x"></i>
-                    <i class="fab fa-git fa-3x"></i> -->
-            <!--</div> -->
-        </div>
-        <!-- <div class="row">
-            <div class="container">
+    <div id = "contact" class="particles2 flex container-fluid contact-section border-top-teal">
+        <div id="particles2-js" class=" canvas"></div>
+        <div class="flex">
+            <div class="row">
                 <div class="col-12 d-flex justify-content-center">
-                    <form action="https://formspree.io/clu2334@gmail.com"
-                    method="POST" id = "contactme">
-                        <div class="form-group">
-                            <label for="name">Name:</label>
-                            <input type="text" class="form-control" id="name" name = 'name'>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" name = "_replyto">
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Message:</label>
-                            <textarea name = 'message' class = "form-control" form = "contactme" rows= "3">Say hi</textarea>
-                        </div>
-                        <input type="hidden" name="_subject" value="New submission!" />
-                        <input type="submit" value="Send">
-                  </form>
+                    <h1 class = 'section-title quicksand dark-teal-text scroll-right' >C O N T A C T&nbsp; M E</h1>
                 </div>
             </div>
-        </div> -->
-        <div class="medium-space"></div>
-        <div class="div-wrapper">
-             <!-- <a href = "./contact.html"><img class = 'mail-bird scroll-bottom' src = './assets/images/bird-bottom.png'></a> -->
-
-            <div class="row " style = "border-top: solid 1px rgb(63, 163, 140)">
-                <div class="col-3"> </div>
-                <div class="col-6 d-flex justify-content-center mt-5">
-                    <p class = 'dark-teal-text' > © 2018 CYNTHIA LU</p>
+            <div class="row icon-row ">
+                <div class="col-12 d-flex justify-content-center">
+                    
+                    <div class="icon-padding scroll-left-3">
+                        <a href = "https://www.linkedin.com/in/cynthia-l-b6931459/" ><i class="fab fa-linkedin-in fa-2x pink-text"></i></a>
+                    </div>
+                    <div class="icon-padding scroll-left-2">
+                        <a href = "https://github.com/cynthialu42" ><i class="fab fa-github fa-2x pink-text"></i></a>
+                    </div>
+                    <div class="icon-padding scroll-left-1" title="clu2334@gmail.com">
+                        <a href = "./contact.html"  target = "_blank"><i class="far fa-envelope fa-2x pink-text" ></i></a>
+                    </div>
                 </div>
-                <div class="col-3"> </div>
-            </div>
+            </div>           
         </div>
-        
-    
-    
-    <!-- <div class = 'background-img'>
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="293.5 195.5 135.71120522710908 188.08807363569946" width="131.71" height="184.09"><defs><path d="M395.5 267C395.5 293.77 372.87 315.5 345 315.5C317.13 315.5 294.5 293.77 294.5 267C294.5 240.23 317.13 218.5 345 218.5C372.87 218.5 395.5 240.23 395.5 267Z" id="d2c0pgOYx7"></path><path d="M412.48 276.03C434.7 307.97 429.39 350.15 400.62 370.17C371.85 390.18 330.45 380.5 308.23 348.56C286.01 316.62 291.33 274.43 320.1 254.42C348.87 234.41 390.26 244.09 412.48 276.03Z" id="h133O29W7B"></path><path d="M392.5 248.5L389.5 196.5L333.5 218.5L392.5 248.5Z" id="a2ubCsTudu"></path><path d="M325.5 272.5L339.5 248.5L316.5 248.5L325.5 272.5Z" id="b1p9YXXTUC"></path><path d="M360.5 248.5C360.5 251.54 358.04 254 355 254C351.96 254 349.5 251.54 349.5 248.5C349.5 245.46 351.96 243 355 243C358.04 243 360.5 245.46 360.5 248.5Z" id="bagU9hCsv"></path><path d="M316.5 244C316.5 247.04 314.04 249.5 311 249.5C307.96 249.5 305.5 247.04 305.5 244C305.5 240.96 307.96 238.5 311 238.5C314.04 238.5 316.5 240.96 316.5 244Z" id="a1J8sEK34x"></path><path d="M386.5 267C386.5 274.17 380.67 280 373.5 280C366.33 280 360.5 274.17 360.5 267C360.5 259.83 366.33 254 373.5 254C380.67 254 386.5 259.83 386.5 267Z" id="b1ooe2TtBM"></path></defs><g><g><use xlink:href="#d2c0pgOYx7" opacity="1" fill="#ffef83" fill-opacity="1"></use></g><g><use xlink:href="#h133O29W7B" opacity="1" fill="#ffef83" fill-opacity="1"></use></g><g><use xlink:href="#a2ubCsTudu" opacity="1" fill="#ffef83" fill-opacity="1"></use><g><use xlink:href="#a2ubCsTudu" opacity="1" fill-opacity="0" stroke="#ffef83" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#b1p9YXXTUC" opacity="1" fill="#ffa8f6" fill-opacity="1"></use><g><use xlink:href="#b1p9YXXTUC" opacity="1" fill-opacity="0" stroke="#ffa8f6" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#bagU9hCsv" opacity="1" fill="#bcd3e0" fill-opacity="1"></use></g><g><use xlink:href="#a1J8sEK34x" opacity="1" fill="#bcd3e0" fill-opacity="1"></use></g><g><use xlink:href="#b1ooe2TtBM" opacity="1" fill="#fcb15f" fill-opacity="1"></use></g></g></svg>
-    </div> -->
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <!-- <script src = "https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script> -->
+        <div class="row footer" >
+            <div class="col-3"> </div>
+            <div class="col-6 d-flex justify-content-center">
+                <p class = 'teal-text' > © 2018 CYNTHIA LU</p>
+            </div>
+            <div class="col-3"> </div>
+        </div>
+    </div>
+
+
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script src = "./assets/js/nav.js"></script>
+  <script src = "./assets/js/main.js"></script>
+  <script type="text/javascript" src = "./assets/js/particles.js"></script>
+  <script type="text/javascript" src = "./assets/js/particles2.js"></script>
+  <script type="text/javascript" src="./assets/js/particles.min.js"></script>
+
 
 </body>
 </html>

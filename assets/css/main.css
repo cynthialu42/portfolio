@@ -1,115 +1,203 @@
-@font-face {
-    font-family: 'mountains';
-    src: url('./../fonts/beyond_the_mountains.ttf') format('truetype');
-}
-
-body, html {
+html, body{
     height: 100%;
     margin: 0;
+}
+body{
+    /* background:#232741; */
+    background: #062743;
+    /* background: #283149; */
+    color: #fff;
     font-family: 'Raleway', sans-serif;
-    /* background: url(../images/dust_scratches.png); 
-    background-size: cover; */
-}
-.background-img { 
-    background: url(../images/computer.png); 
-    /* background: url(../images/background-beautiful-bloom-54459.jpg); */
-    /* background: url(../images/portfoliobackground.png); */
-     /* Full height */
-     height: 100%; 
-
-     /* Center and scale the image nicely */
-     background-position: center;
-     /* background-repeat: no-repeat; */
-     background-size: cover;
-     
-}
-.test-background{
-    background: url(../images/sky-drawn-new.png); 
-    /* background: url(../images/background-beautiful-bloom-54459.jpg); */
-    /* background: url(../images/portfoliobackground.png); */
-     /* Full height */
-     height: 100%; 
-
-     /* Center and scale the image nicely */
-     background-position: center;
-     /* background-repeat: no-repeat; */
-     background-size: cover;
-}
-.gingham-yellow { 
-    background: url(../images/gingham-yellow.png); 
-    /* background: url(../images/background-beautiful-bloom-54459.jpg); */
-    /* background: url(../images/portfoliobackground.png); */
-     /* Full height */
-
-     /* Center and scale the image nicely */
-     /* background-position: center;*/
-     /* background-repeat: repeat-y; */
-     /*background-size: cover; */
-     
+    text-align: center;
+    margin: 0px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
 }
 
-.recipe-home-img{
-    width: 100%;
+a:hover{
+    text-decoration: none;
 }
-.background-longer { 
-    background: url(../images/grey-background.png); 
-    /* background: url(../images/background-beautiful-bloom-54459.jpg); */
-    /* background: url(../images/portfoliobackground.png); */
-     /* Full height */
-     height: auto; 
 
-     /* Center and scale the image nicely */
-     background-position: center;
-     background-repeat: repeat-y;
-     background-size: cover;
-     
+.particles-background, .particles2-background{
+    margin:0;
+    padding:0;
+    width: 100vw;
+    height: 100vh;
 }
-.dark {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
+
+.particles2-background{
     height: 100%;
 }
-.sky-blue-background{
-    background: rgb(97,191,251);
+
+.div-wrapper{
+    position: relative;
 }
-.hey {
-    /* background-color: #333; */
-    /* position: fixed; */
-    /* top: 0;
-    width: 100%;
-    display:block; */
-    /* transition: top 0.3s; */
-    height: 60x;
+
+.full-height {
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    /* font-size: 39pt;
+    line-height: 36pt; */
+    font-size: 5vw;
+    color: white;
+    z-index: 90;
+    pointer-events: none;
+}
+section {
+    padding: 0 10px;
+    color: #fff;
+    height: calc(100vh + 53px);
+    line-height: 18pt;
+    position: relative;
+    display: block;
+}
+.particles2{
+    padding: 0 10px;
+
+    position: relative;
+    display: block;
+}
+div{
+    display: block;
+}
+
+.canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+}
+.sticky {
     position: fixed;
     top: 0;
-    transition: top 0.5s ease-in-out;
-    width: 100%;
-    z-index: 99;
-  }
-  
-  
-.test {
-    margin-top: 100px;
-}
-
-.big-space {
-    height: 6em;
     width: 100%;
 }
 
-.medium-space {
-    height: 3em;
-    width: 100%;
+/* FONTS */
+.montserrat{
+    font-family: "Montserrat", sans-serif;
 }
-.about-img {
-    width: 100%;
+
+.encode-sans{
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+.quicksand{
+    font-family: "Quicksand", sans-serif;
+}
+.raleway{
+    font-family: 'Raleway', sans-serif;
+
+}
+/* TEXT COLORS */
+.white-text{
+    color: white;
+}
+
+.teal-text{
+    color: #17BEBB;
+}
+
+.blue-text{
+    color: #062743;
+}
+
+.pink-text{
+    color: #FD3E81;
+}
+/* NAV STYLE */
+
+.nav-colors{
+    color: white;
+}
+.nav-colors:hover{
+    color: #FD3E81;
+}
+.nav-background{
+    background:#062743;
+    border-bottom: 3px solid #17BEBB;
+    z-index: 9;
+
+}
+
+.logo{
+    max-width: 2em;
+}
+/* BACKGROUND COLORS */
+.white-background{
+    background: white;
+}
+/*Welcome screen*/
+.seemorebtn{
+    /* border: 2px solid rgb(63, 163, 140); */
+    border: 2px solid #17BEBB;
+    padding: .5em 1.5em;
+    /* color: rgb(26, 105, 87); */
+    color: #17BEBB;
+}
+
+.btn-text{
+    font-weight: bold;
+}
+
+
+.welcome-text{
+    padding: 0em 0em 1em 0em;
+}
+.welcome-details{
+    font-size: 2vw;
+    padding-bottom: .5em; 
+}
+.large-button{
+    /* width: 50%;
+    height: 50%; */
+    font-size: 1.5vw;
+}
+
+
+/* ABOUT */
+
+.sticky + .about-section{
+    padding-top: 4em;
+}
+.about-section{
+    padding-bottom: 4em;
 }
 .about-text {
     font-size: 1.5em;
 }
-.cl-container {
-    width: 95%;
+.about-row{
+    padding-top:4em;
 }
+.about-details{
+    font-size: 1.1em;
+}
+.teal-border{
+    border: 3px solid #17BEBB;
+}
+
+.about-img{
+    width: 100%;
+}
+
+/* PROJECTS */
+
+.project-section{
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
 
 .square {
     width: 100%;
@@ -119,43 +207,14 @@ body, html {
     margin-bottom: 2em;
     position: relative;
 }
-/* .overlay{
-    position: absolute;
-    background: rgba(0, 0, 0, 0.267);
-    top:0;
-    bottom:0;
-    right:0;
-    left:0;
-    transition: all .5s ease;
-} */
-
-/* .overlay .overlay-inner{
-    position: absolute;
-    text-align:center;
-    top: 43%;
+.sunflower {
     width: 100%;
-    bottom: 0;
-} */
-
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgb(43, 42, 42);
-  }
-
-  .square:hover .overlay{
-      opacity:1;
-  }
-
-  .text {
-    color: white;
+    /* margin-bottom: 10px; */
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
+}
+.project-text {
+    color: #FD3E81;
     font-size: 1.3em;
     position: absolute;
     top: 50%;
@@ -165,323 +224,196 @@ body, html {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
   }
-  .text p{
-      color: rgb(172, 172, 172);
+  .project-text p{
+      /* color: rgb(172, 172, 172); */
+      color: white;
   }
-  
-.sunflower {
-    width: 100%;
-    /* margin-bottom: 10px; */
-    /* border-top-left-radius: 20px;
-    border-top-right-radius: 20px; */
-}
-.text-box {
-    width: 100%;
-    text-align: center;
-    padding: 0em 1em;
-}
 
-.title-size{
-    font-size: 8vw;
-}
-
-.section-title {
-    margin-bottom: 1em;
-    margin-top: 1em;
-}
-
-.div-wrapper {
-    position: relative;
-
-}
-
-.bird-sunflower {
+  .overlay {
     position: absolute;
+    top: 0;
     bottom: 0;
+    left: 0;
     right: 0;
-    margin: auto;
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    /* background-color: rgb(43, 42, 42); */
+    background-color: #062743;
+  }
+
+  .square:hover .overlay{
+      opacity:1;
+      border: 2px solid #17BEBB;
+  }
+
+  .border-top-pink{
+      border-top: solid 3px #FD3E81;
+  }
+
+  .border-top-teal{
+    border-top: solid 3px #17BEBB;
+  }
+  .grey-background{
+      background: #8095a7;
+  }
+
+  /* CONTACT SECTION*/
+
+  .contact-section{
+    padding-top: 4em;
+  }
+.icon-row{
+    padding-top: 1em;
 }
-
-.airplane {
-    position: absolute;
-    bottom: 0;
-    right: 10%;
-    margin: auto;
-    width: 300px;
-}
-
-.mail-bird {
-    position: absolute;
-    bottom: 0;
-    right: 30%;
-    margin: auto;
-    width: 10%;
-}
-
-.header {
-    margin-top: 4em;
-}
-
-
-
-.mountains-font {
-    font-family: 'mountains', sans-serif;
-}
-.title-details {
-    font-size: 2vw;
-}
-
-.bold{
-    font-weight: bold;
-}
-
-#hey a:hover{
-    color: rgb(24, 83, 77);
-    text-decoration: none;
-}
-
-.enlarge:hover {
-    transform: scale(1.05);
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-
-
-
-.icon-padding {
+  .icon-padding {
     padding: 0em .5em;
 }
-.slideshow-container {
-    width: 100%;
-    margin: auto;
-    vertical-align: middle;
+
+.footer{
+    bottom: 0;
+    padding-top: 4em;
 }
 
-.top-spacing {
-    margin-top: 4em;
-}
-
-.project-description, .contact-form {
-  padding: 1em 2em;
-  background: white;
-}
-.contact-form {
-    margin: auto;
-}
-.slide-container {
-    width: 95%;
-    margin: auto;
+/* PROJECTS */
+.project-title{
+    font-size: 2em;
+    font-weight: bold;
 }
 .project-footer{
     bottom:0;
     width: 100%;
     margin:auto;
+    margin-top: 3em;
  }
 
-
- .airplane {
-    position: absolute;
-    bottom: 0;
-    right: 10%;
-    margin: auto;
-    max-width: 300px;
-}
- .full-height {
-     height: 100%;
- }
-
- .quicksand{
-    font-family: 'Quicksand', sans-serif;
- }
-
-
-
- .about {
-     margin: auto;
- }
-
-.seemorebtn{
-    border: 2px solid rgb(63, 163, 140);
-    padding: .5em 1.5em;
-    color: rgb(26, 105, 87);
-    font-size: 1em;
+.project-heading{
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
-.arrow{
-    font-size: 1em;
-    
+ 
+/* RECIPE */
+.orange-background{
+    background: sandybrown;
+    border-bottom: solid 1px rgb(230, 138, 58);
+}
+.red-orange{
+    color: rgb(218, 87, 0);
+}
+.dark-orange{
+    color: rgb(255, 145, 0);
+}
+.orange-border-top{
+    border-top: solid 1px rgb(230, 138, 58);
 }
 
-
-/* ======================= */
-/* =========COLORS======== */
-/* ======================= */
-
-.nav-white {
-    background: rgba(255, 255, 255, 0.63);
-}
-.nav-background {
-    background: rgba(255, 255, 255, 0.795);
-    border-bottom: solid 1px rgb(117,170,158);
-}
-
-/* text color */
-.teal-text{
-    color: rgb(117,170,158);
-}
-
-.dark-teal-text {
-    color: rgb(63, 163, 140);
-}
-
+/* BOOKBUDDIES */
 .purple-text {
     color: #4E2A84;
 }
-.darker-teal-text {
-    color: rgb(26, 105, 87);
+.purple-border-top{
+    border-top: solid 1px #401F68;
+ }
+.dark-purple{
+    color: #401F68;
 }
-.dark-turquoise {
-    color: rgb(12, 134, 98);
+.purple-background{
+    background: #4E2A84;
+    border-bottom: solid 1px #401F68;
 }
-.turquoise {
-    color: rgb(28, 173, 130);
-}
-.firebrick {
-    color: firebrick;
-}
-.dark-green-text {
+
+/* SCRAPER */
+.dark-green{
     color: seagreen;
 }
+.green-border-top{
+    border-top: solid 1px seagreen;
+ }
+ .green-background {
+    background: seagreen;
+    border-bottom: solid 1px rgb(23, 92, 23);
+}
+
+.forest-green{
+    color: forestgreen;
+}
+
+
+/* CONTACT */
+
 .dark-blue-text {
     color: rgb(1, 106, 141);
 }
 .light-blue-text {
     color: rgb(37, 141, 175);
 }
-.dark-orange{
-    color: rgb(255, 145, 0);
+.contact-form {
+    margin: auto;
 }
-.dark-green{
-    color: seagreen;
-}
-
-/* border color */
- .orange-border-top{
-    border-top: solid 1px rgb(230, 138, 58);
+.contact-submit{
+    border: none;
+    background: rgb(1, 106, 141);
+    width: 100%;
  }
-
+ .contact-submit:hover{
+    opacity: 50%;
+ }
  .blue-border-top{
     border-top: solid 1px rgb(97,191,251);
  }
 
- .purple-border-top{
-    border-top: solid 1px #401F68;
- }
-
- .green-border-top{
-    border-top: solid 1px seagreen;
- }
-
-
-
-
- /* background color */
-
- .orange-background{
-    background: sandybrown;
-    border-bottom: solid 1px rgb(230, 138, 58);
-}
-
-.purple-background{
-    background: #4E2A84;
-    border-bottom: solid 1px #401F68;
-}
-
-.green-background {
-    background: seagreen;
-    border-bottom: solid 1px rgb(23, 92, 23);
-}
-
-
-/* title text*/
-.recipe-title, .contact-title, .book-title, .scraper-title{
-    color: rgb(218, 87, 0);
-    font-size: 2em;
-    padding-top: 1em;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
-}
-.contact-title{
-   color: rgb(1, 106, 141);
-}
-.book-title{
-    color: #401F68;
-}
-
-.scraper-title{
-    color: forestgreen;
-}
-.contact-submit{
-   border: none;
-   background: rgb(1, 106, 141);
-   width: 100%;
-}
-.contact-submit:hover{
-   opacity: 50%;
-}
-
-.demo-btn{
-    border: solid 1px rgb(230, 138, 58);
- }
-
- /* MEDIA QUERIES */
-@media screen and (max-width: 991px) {
-    .slideshow-container{
-        margin-bottom: 3em;
+/* MEDIA QUERIES */
+@media screen and (max-width: 992px){
+     .project-description{
+         padding-top: 2em;
+     }
+    .text {
+        font-size: 7vw;
     }
-    .project-description{
-        margin-bottom: 3em;
-    }
-    .background-img{
-        height: 75%;
-    }
-    .title-details{
+    .welcome-details{
         font-size: 3vw;
     }
-}
-
-@media screen and (max-width: 749px) {
-
-    .background-img{
-        height: 60%;
+    .large-button{
+        font-size: 2.5vw;
     }
-    .title-size{
-        font-size: 12vw;
+    .about{
+        padding-top: 2em;
     }
+ }
 
-    .title-details{
+ @media screen and (max-width: 768px){
+    .text {
+        font-size: 8vw;
+    }
+    .welcome-details{
         font-size: 4vw;
+    }
+    .large-button{
+        font-size: 3vw;
     }
     .about-img{
         display: none;
     }
-    .airplane {
-        position: absolute;
-        bottom: 0;
-        right: 10%;
-        margin: auto;
-        max-width: 40%;
+ }
+
+ @media screen and (max-width: 576px){
+    .text {
+        font-size: 10vw;
     }
-    .mail-bird {
-        position: absolute;
-        bottom: 0;
-        right: 15%;
-        margin: auto;
-        width: 10%;
+    .welcome-details{
+        font-size: 5vw;
     }
-}
+    .large-button{
+        font-size: 3.5vw;
+    }
+    .about-img{
+        display: none;
+    }
+ }
+
+
+
+
 
