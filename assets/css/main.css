@@ -281,6 +281,9 @@ div{
     bottom: 0;
     padding-top: 4em;
 }
+.contact-icon:hover{
+    transform: scale(1.1);
+}
 
 /* PROJECTS */
 .project-title{
@@ -313,6 +316,9 @@ div{
 }
 .orange-border-top{
     border-top: solid 1px rgb(230, 138, 58);
+}
+.red-orange-background{
+    background: rgb(218, 87, 0);
 }
 
 /* BOOKBUDDIES */
@@ -369,6 +375,8 @@ div{
  .blue-border-top{
     border-top: solid 1px rgb(97,191,251);
  }
+
+
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 992px){
