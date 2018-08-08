@@ -379,6 +379,30 @@ div{
     border-color: #3dcab7;
 }
 
+/* Bird Battle */
+.bb-blue{
+    color: #070845;
+}
+.bb-blue-background{
+    background: #070845;
+}
+.bb-btn{
+    background: #111391;
+    border-color: #111391;
+}
+.bb-btn:hover{
+    background: #2f3199;
+    border-color: #2f3199;
+}
+
+.bb-demo-btn{
+    background: #070845;
+    border: #070845;
+}
+.bb-demo-btn:hover{
+    background: #111391;
+    border-color: #111391;
+}
 /* CONTACT */
 
 .dark-blue-text {
